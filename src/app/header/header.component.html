@@ -1,16 +1,7 @@
 <div class="container">
   <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
+    <li *ngFor="let route of ['home','members','blogg','contact','sponsors']"class="nav-item">
+      <a class="nav-link" routerLinkActive="active" [routerLink]="route">{{route}}</a>
     </li>
   </ul>
 </div>
