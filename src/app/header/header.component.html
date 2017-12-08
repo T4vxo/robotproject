@@ -1,7 +1,8 @@
 <div class="container">
   <ul class="nav nav-tabs">
-    <li *ngFor="let route of ['home','members','blogg','contact','sponsors']"class="nav-item">
-      <a class="nav-link" routerLinkActive="active" [routerLink]="route">{{route}}</a>
+    <li *ngFor="let route of routeComponents | slice:1"class="nav-item">
+      <a class="nav-link" routerLinkActive="active" [routerLink]="route.path">{{route.path}}</a>
     </li>
   </ul>
 </div>
+

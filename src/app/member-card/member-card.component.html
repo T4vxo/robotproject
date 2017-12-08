@@ -1,0 +1,8 @@
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" [src]="user.img" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">{{user.title}}</h4>
+    <p class="card-text">{{user.text}}</p>
+    <a [href]="'mailto:'+user.mail" class="btn btn-primary">Contact me</a>
+  </div>
+</div>

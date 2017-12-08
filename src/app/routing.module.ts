@@ -10,7 +10,7 @@ import { MembersComponent } from './members/members.component';
 import { StartComponent } from './start/start.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 
-const routes: Routes = [
+export const routes: Routes = [ //used in header-components to create menu aswell
   { path: '', redirectTo:'home',pathMatch:'full' },
   { path: 'home', component: StartComponent },
   { path: 'blogg', component: BloggComponent },
